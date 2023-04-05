@@ -110,26 +110,26 @@ export function formatPast(param: string | Date, format: string = 'YYYY-mm-dd'):
   time = Number.parseInt(`${time - t}`);
 
   if (time < 10000) {
-    // 10秒内
+    // 10 秒内
     return '刚刚';
   } else if (time < 60000 && time >= 10000) {
-    // 超过10秒少于1分钟内
+    // 超过 10 秒少于 1 分钟内
     s = Math.floor(time / 1000);
     return `${s}秒前`;
   } else if (time < 3600000 && time >= 60000) {
-    // 超过1分钟少于1小时
+    // 超过 1 分钟少于 1 小时
     s = Math.floor(time / 60000);
     return `${s}分钟前`;
   } else if (time < 86400000 && time >= 3600000) {
-    // 超过1小时少于24小时
+    // 超过 1 小时少于 24 小时
     s = Math.floor(time / 3600000);
     return `${s}小时前`;
   } else if (time < 259200000 && time >= 86400000) {
-    // 超过1天少于3天内
+    // 超过 1 天少于 3 天内
     s = Math.floor(time / 86400000);
     return `${s}天前`;
   } else {
-    // 超过3天
+    // 超过 3 天
     let date = typeof param === 'string' || 'object' ? new Date(param) : param;
     return formatDate(date, format);
   }
@@ -145,12 +145,14 @@ export function formatPast(param: string | Date, format: string = 'YYYY-mm-dd'):
 export function formatAxis(param: Date): string {
   let hour: number = new Date(param).getHours();
 
-  if (hour < 6) return '凌晨好';
-  else if (hour < 9) return '早上好';
-  else if (hour < 12) return '上午好';
-  else if (hour < 14) return '中午好';
-  else if (hour < 17) return '下午好';
-  else if (hour < 19) return '傍晚好';
-  else if (hour < 22) return '晚上好';
-  else return '夜里好';
+  switch (true) {
+    case hour < 6: return '凌晨好';
+    case hour < 9: return '早上好';
+    case hour < 12: return '上午好';
+    case hour < 14: return '中午好';
+    case hour < 17: return '下午好';
+    case hour < 19: return '傍晚好';
+    case hour < 22: return '晚上好';
+    default: return '夜里好';
+  }
 }
