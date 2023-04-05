@@ -34,6 +34,7 @@ async function baseHttp(url: string, options: RequestOptions = {}) {
       url: VITE_API_URL + url, ...options,
     });
     const { data: result, statusCode } = request;
+    // TODO ／人◕ ‿‿ ◕人＼ response
     const { code, data, message } = result as Result;
     const prefix = Math.floor(statusCode / 100);
 

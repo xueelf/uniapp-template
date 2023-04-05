@@ -68,7 +68,7 @@ export async function login(provider: UniApp.LoginOptions['provider'], options?:
   const { code } = await uni.login({
     provider, ...options,
   });
-  // 拿 code 换取 token
+  // TODO ／人◕ ‿‿ ◕人＼ 拿 code 换取 token
   const result = await userApi.login({
     code,
   });
