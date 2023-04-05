@@ -12,7 +12,9 @@ A template for uniapp with vue 3.
 
 ### 为什么不用 HBuilder 生成 uniapp 项目？
 
-~~那玩意这么难用，你是认真的么？~~ 用 cli 构建的项目可以用 HBuilder 打开，但用 HBuilder 生成的项目在其它 IDE 里根本没法跑
+~~那玩意这么难用，你是认真的么？不是因为工作谁会去碰 uniapp 这种东西，一大堆坑~~
+
+用 cli 构建的项目可以用 HBuilder 打开，但用 HBuilder 生成的项目在其它 IDE 里根本没法跑
 
 ## 安装使用
 
@@ -30,9 +32,10 @@ cd uniapp-template
 pnpm install
 ```
 
-- 打包
+- 运行、发布
 
 ```bash
+pnpm dev:<platform>
 pnpm build:<platform>
 ```
 
