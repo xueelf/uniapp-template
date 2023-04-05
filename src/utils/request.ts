@@ -14,16 +14,18 @@ interface Result {
 }
 
 /**
- * 基于 uni.request 的封装
- * https://uniapp.dcloud.io/api/request/request.html#request
+ * 发起网络请求
+ * 
+ * @param url - 开发者服务器接口地址
+ * @param options - 网络请求 {@link https://uniapp.dcloud.net.cn/api/request/request.html#request | 配置项}
  */
 async function baseHttp(url: string, options: RequestOptions = {}) {
   const header = {
     'Content-Type': 'application/json',
   };
 
-  if (formatToken) {
-    header['Authorization'] = formatToken;
+  if (formatToken.value) {
+    header['Authorization'] = formatToken.value;
   }
   options.header = Object.assign(header, options.header);
 
@@ -36,9 +38,9 @@ async function baseHttp(url: string, options: RequestOptions = {}) {
     const prefix = Math.floor(statusCode / 100);
 
     // TODO ／人◕ ‿‿ ◕人＼ 状态码和 code 处理
-    // if (prefix !== 200) {
-    //   throw new Error(message);
-    // }
+    if (prefix !== 2 || code !== 0) {
+      throw new Error(message);
+    }
     return data;
   } catch (error) {
     uni.showToast({
