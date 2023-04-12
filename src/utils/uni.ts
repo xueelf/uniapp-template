@@ -75,5 +75,4 @@ export async function login(provider: UniApp.LoginOptions['provider'], options?:
   const { token } = result;
 
   authStore.updateToken(token);
-  uni.setStorageSync('token', token);
 }
