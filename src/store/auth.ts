@@ -22,6 +22,7 @@ export const useAuthStore = defineStore('auth', {
      */
     updateToken(token: string) {
       this.token = token;
+      uni.setStorageSync('token', token);
     },
   },
 });
