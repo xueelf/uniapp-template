@@ -58,3 +58,18 @@ pnpm build:<platform>
 |quickapp-webview|快应用（webview）|
 |quickapp-webview-union|快应用联盟|
 |quickapp-webview-huawei|快应用华为|
+
+## 目录结构
+
+```text
+.
+├─ src          资源目录
+|  ├─ api       接口目录
+|  ├─ pages     页面
+|  ├─ static    静态资源
+|  ├─ store     pinia
+|  ├─ style     样式目录
+|  └─ utils     工具类
+├─ types        声明文件
+└─ .env         环境变量
+```
