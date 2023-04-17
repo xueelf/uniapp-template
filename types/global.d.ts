@@ -13,6 +13,7 @@ declare interface ViteEnv {
   /** 服务端口 */
   VITE_PORT: number;
   /** 日志等级 */
-  // VITE_LOG_LEVEL: string;
+  VITE_LOG_LEVEL: string;
+  /** 接口地址 */
   VITE_PUBLIC_PATH: string;
 }
