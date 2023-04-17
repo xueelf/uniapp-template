@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import logger from '@/utils/logger';
+import { logger } from '@/utils/logger';
 import { onLaunch, onShow, onHide } from '@dcloudio/uni-app';
 
 onLaunch(() => {
