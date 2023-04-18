@@ -1,4 +1,4 @@
-import { formatDate } from '@/utils/formatTime';
+import { formatDate } from '~/utils/formatTime';
 
 export enum Level {
   ALL,

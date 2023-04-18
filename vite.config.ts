@@ -26,6 +26,7 @@ function warpperEnv(envConf: Record<string, string>): ViteEnv {
   const ret: ViteEnv = {
     VITE_OPEN: false,
     VITE_PORT: 2333,
+    VITE_LOG_LEVEL: 'INFO',
     VITE_PUBLIC_PATH: '',
   };
 
@@ -51,8 +52,7 @@ function warpperEnv(envConf: Record<string, string>): ViteEnv {
 
 /** 设置别名 */
 const alias: Record<string, string> = {
-  '@': pathResolve('src'),
-  '@build': pathResolve('build'),
+  '~': pathResolve('src'),
 };
 const viteConfig = defineConfig((config: ConfigEnv): UserConfig => {
   const { command, mode } = config;
@@ -97,7 +97,7 @@ const viteConfig = defineConfig((config: ConfigEnv): UserConfig => {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import "@/style/uni.scss";',
+          additionalData: '@import "~/style/uni.scss";',
         },
       },
     },
