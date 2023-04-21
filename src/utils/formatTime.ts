@@ -16,11 +16,12 @@ export function formatDate(date: Date, format: string): string {
   let qut = Math.floor((date.getMonth() + 3) / 3).toString(); // 季度
   const opt: { [key: string]: string } = {
     'Y+': date.getFullYear().toString(), // 年
-    'm+': (date.getMonth() + 1).toString(), // 月
-    'd+': date.getDate().toString(), // 日
+    'M+': (date.getMonth() + 1).toString(), // 月
+    'D+': date.getDate().toString(), // 日
     'H+': date.getHours().toString(), // 时
-    'M+': date.getMinutes().toString(), // 分
-    'S+': date.getSeconds().toString(), // 秒
+    'm+': date.getMinutes().toString(), // 分
+    's+': date.getSeconds().toString(), // 秒
+    'S+': date.getMilliseconds().toString(), // 毫秒
     'q+': qut, // 季度
   };
   // 中文数字 (星期)
