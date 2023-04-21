@@ -1,6 +1,6 @@
 import { formatDate } from '~/utils/formatTime';
 
-export enum Level {
+enum Level {
   ALL,
   TRACE,
   DEBUG,
@@ -20,35 +20,43 @@ class Logger {
 
   }
 
-  private print(level: Level, message: string): void {
+  private print(level: Level, message: any): void {
     if (Level[this.level] > level) {
       return;
     }
-    const date = formatDate(new Date, 'YYY-mm-dd HH:MM:SS');
+
+    // 数据类型转换
+    switch (true) {
+      case typeof message === 'object':
+        message = JSON.stringify(message, null, 2);
+        break;
+    }
+    const date = formatDate(new Date, 'YYYY-MM-DD HH:mm:ss.SSS');
+
     console.log(`[${date}] [${Level[level]}] - ${message}`);
   }
 
-  trace(message: string): void {
+  trace(message: any): void {
     return this.print(Level.TRACE, message);
   }
 
-  debug(message: string): void {
+  debug(message: any): void {
     return this.print(Level.DEBUG, message);
   }
 
-  info(message: string): void {
+  info(message: any): void {
     return this.print(Level.INFO, message);
   }
 
-  warn(message: string): void {
+  warn(message: any): void {
     return this.print(Level.WARN, message);
   }
 
-  error(message: string): void {
+  error(message: any): void {
     return this.print(Level.ERROR, message);
   }
 
-  mark(message: string): void {
+  mark(message: any): void {
     return this.print(Level.MARK, message);
   }
 }

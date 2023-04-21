@@ -13,6 +13,10 @@ interface Result {
   message: string;
 }
 
+interface RequestSuccessCallbackResult extends UniApp.RequestSuccessCallbackResult {
+  data: Result;
+}
+
 /**
  * 发起网络请求
  * 
@@ -32,10 +36,10 @@ async function baseHttp(url: string, options: RequestOptions = {}) {
   try {
     const request = await uni.request({
       url: VITE_API_URL + url, ...options,
-    });
+    }) as RequestSuccessCallbackResult;
     const { data: result, statusCode } = request;
     // TODO ／人◕ ‿‿ ◕人＼ response
-    const { code, data, message } = result as Result;
+    const { code, data, message } = result;
     const prefix = Math.floor(statusCode / 100);
 
     // TODO ／人◕ ‿‿ ◕人＼ 状态码和 code 处理
