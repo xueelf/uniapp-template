@@ -20,23 +20,33 @@ A template for uniapp with vue 3.
 
 - 克隆仓库
 
-```bash
-git clone https://github.com/dcyuki/uniapp-template.git
+```shell
+> git clone https://github.com/dcyuki/uniapp-template.git
 ```
 
 - 安装依赖
 
-```bash
-cd uniapp-template
-
-pnpm install
+```shell
+> cd uniapp-template
+> pnpm install
 ```
 
-- 运行、发布
+- 更新依赖
 
-```bash
-pnpm dev:<platform>
-pnpm build:<platform>
+```shell
+> npx @dcloudio/uvm
+```
+
+- 运行项目
+
+```shell
+> pnpm dev:<platform>
+```
+
+- 项目打包、发布
+
+```shell
+> pnpm build:<platform>
 ```
 
 `platform` 可取值如下：

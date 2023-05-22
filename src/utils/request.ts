@@ -19,11 +19,15 @@ interface RequestSuccessCallbackResult extends UniApp.RequestSuccessCallbackResu
 
 /**
  * 发起网络请求
- * 
+ *
  * @param url - 开发者服务器接口地址
  * @param options - 网络请求 {@link https://uniapp.dcloud.net.cn/api/request/request.html#request | 配置项}
  */
-async function baseHttp(url: string, options: RequestOptions = {}) {
+async function baseHttp(
+  method: UniNamespace.RequestOptions['method'],
+  url: string,
+  options: RequestOptions = {}
+) {
   const header = {
     'Content-Type': 'application/json',
   };
@@ -35,7 +39,9 @@ async function baseHttp(url: string, options: RequestOptions = {}) {
 
   try {
     const request = await uni.request({
-      url: VITE_API_URL + url, ...options,
+      method,
+      url: VITE_API_URL + url,
+      ...options,
     }) as RequestSuccessCallbackResult;
     const { data: result, statusCode } = request;
     // TODO ／人◕ ‿‿ ◕人＼ response
@@ -57,46 +63,42 @@ async function baseHttp(url: string, options: RequestOptions = {}) {
 
 /**
  * 发送 GET 请求
- * 
+ *
  * @param url - 接口地址
  * @param options - 网络请求配置项
  */
 function getRequest(url: string, options?: RequestOptions) {
-  options.method = 'GET';
-  return baseHttp(url, options);
+  return baseHttp('GET', url, options);
 }
 
 /**
  * 发送 PUT 请求
- * 
+ *
  * @param url - 接口地址
  * @param options - 网络请求配置项
  */
 function putRequest(url: string, options?: RequestOptions) {
-  options.method = 'PUT';
-  return baseHttp(url, options);
+  return baseHttp('PUT', url, options);
 }
 
 /**
  * 发送 POST 请求
- * 
+ *
  * @param url - 接口地址
  * @param options - 网络请求配置项
  */
 function postRequest(url: string, options?: RequestOptions) {
-  options.method = 'POST';
-  return baseHttp(url, options);
+  return baseHttp('POST', url, options);
 }
 
 /**
  * 发送 DELETE 请求
- * 
+ *
  * @param url - 接口地址
  * @param options - 网络请求配置项
  */
 function deleteRequest(url: string, options?: RequestOptions) {
-  options.method = 'DELETE';
-  return baseHttp(url, options);
+  return baseHttp('DELETE', url, options);
 }
 
 export default {
@@ -104,4 +106,4 @@ export default {
   put: putRequest,
   post: postRequest,
   delete: deleteRequest,
-}
+};
