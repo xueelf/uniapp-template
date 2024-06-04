@@ -6,28 +6,11 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "~/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     },
-    "lib": [
-      "esnext",
-      "dom"
-    ],
-    "types": [
-      "vite/client",
-      "@dcloudio/types"
-    ]
+    "lib": ["esnext", "dom"],
+    "types": ["vite/client", "@dcloudio/types"]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "types/*.d.ts",
-    "vite.config.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "types/*.d.ts", "vite.config.ts"],
+  "exclude": ["node_modules", "dist"]
 }

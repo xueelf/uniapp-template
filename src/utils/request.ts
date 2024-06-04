@@ -1,5 +1,5 @@
 import { storeToRefs } from 'pinia';
-import { useAuthStore } from '~/store/auth';
+import { useAuthStore } from '@/store/auth';
 
 const authStore = useAuthStore();
 const { VITE_API_URL } = import.meta.env;
@@ -26,7 +26,7 @@ interface RequestSuccessCallbackResult extends UniApp.RequestSuccessCallbackResu
 async function baseHttp(
   method: UniNamespace.RequestOptions['method'],
   url: string,
-  options: RequestOptions = {}
+  options: RequestOptions = {},
 ) {
   const header = {
     'Content-Type': 'application/json',
@@ -38,17 +38,17 @@ async function baseHttp(
   options.header = Object.assign(header, options.header);
 
   try {
-    const request = await uni.request({
+    const request = (await uni.request({
       method,
       url: VITE_API_URL + url,
       ...options,
-    }) as RequestSuccessCallbackResult;
+    })) as RequestSuccessCallbackResult;
     const { data: result, statusCode } = request;
-    // TODO ／人◕ ‿‿ ◕人＼ response
+    // TODO: ／人◕ ‿‿ ◕人＼ response
     const { code, data, message } = result;
     const prefix = Math.floor(statusCode / 100);
 
-    // TODO ／人◕ ‿‿ ◕人＼ 状态码和 code 处理
+    // TODO: ／人◕ ‿‿ ◕人＼ 状态码和 code 处理
     if (prefix !== 2 || code !== 0) {
       throw new Error(message);
     }

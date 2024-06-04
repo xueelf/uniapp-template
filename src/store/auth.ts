@@ -12,12 +12,12 @@ export const useAuthStore = defineStore('auth', {
     /**
      * 格式化 token
      */
-    formatToken: state => state.token ? `Bearer ${state.token}` : null,
+    formatToken: state => (state.token ? `Bearer ${state.token}` : null),
   },
   actions: {
     /**
      * 更新 token 信息
-     * 
+     *
      * @param token - token
      */
     updateToken(token: string) {

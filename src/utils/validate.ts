@@ -1,6 +1,6 @@
 /**
  * 手机号
- * 
+ *
  * @param val 当前值字符串
  */
 export function verifyPhone(val: string): boolean {
@@ -13,7 +13,7 @@ export function verifyPhone(val: string): boolean {
 
 /**
  * 国内电话号
- * 
+ *
  * @param val 当前值字符串
  */
 export function verifyTelPhone(val: string): boolean {

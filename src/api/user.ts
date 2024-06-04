@@ -1,9 +1,9 @@
-import request from '~/utils/request';
+import request from '@/utils/request';
 
 export function useUserApi() {
   return {
     login(data: object) {
-      // TODO ／人◕ ‿‿ ◕人＼ login 接口
+      // TODO: ／人◕ ‿‿ ◕人＼ login 接口
       // return request.post('/user/login', {
       //   data,
       // });
@@ -11,5 +11,5 @@ export function useUserApi() {
         token: '5eb63bbbe01eeed093cb22bb8f5acdc3',
       };
     },
-  }
+  };
 }

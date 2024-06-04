@@ -1,4 +1,4 @@
-import { formatDate } from '~/utils/formatTime';
+import { formatDate } from '@/utils/formatTime';
 
 enum Level {
   ALL,
@@ -16,9 +16,7 @@ class Logger {
   constructor(
     /** 日志等级 */
     public level: keyof typeof Level = 'INFO',
-  ) {
-
-  }
+  ) {}
 
   private print(level: Level, message: any): void {
     if (Level[this.level] > level) {
@@ -31,7 +29,7 @@ class Logger {
         message = JSON.stringify(message, null, 2);
         break;
     }
-    const date = formatDate(new Date, 'YYYY-MM-DD HH:mm:ss.SSS');
+    const date = formatDate(new Date(), 'YYYY-MM-DD HH:mm:ss.SSS');
 
     console.log(`[${date}] [${Level[level]}] - ${message}`);
   }
