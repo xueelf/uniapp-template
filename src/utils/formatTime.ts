@@ -1,6 +1,6 @@
 /**
  * 时间日期转换
- * 
+ *
  * @param date - 当前时间，new Date() 格式
  * @param format - 需要转换的时间格式字符串
  * @description format 字符串随意，如 `YYYY-mm、YYYY-mm-dd`
@@ -43,10 +43,20 @@ export function formatDate(date: Date, format: string): string {
   };
 
   if (/(W+)/.test(format)) {
-    format = format.replace(RegExp.$1, RegExp.$1.length > 1 ? (RegExp.$1.length > 2 ? '星期' + week[we] : '周' + week[we]) : week[we]);
+    format = format.replace(
+      RegExp.$1,
+      RegExp.$1.length > 1
+        ? RegExp.$1.length > 2
+          ? '星期' + week[we]
+          : '周' + week[we]
+        : week[we],
+    );
   }
   if (/(Q+)/.test(format)) {
-    format = format.replace(RegExp.$1, RegExp.$1.length == 4 ? '第' + quarter[qut] + '季度' : quarter[qut]);
+    format = format.replace(
+      RegExp.$1,
+      RegExp.$1.length == 4 ? '第' + quarter[qut] + '季度' : quarter[qut],
+    );
   }
   if (/(Z+)/.test(format)) {
     format = format.replace(RegExp.$1, RegExp.$1.length == 3 ? '第' + z + '周' : z + '');
@@ -56,7 +66,10 @@ export function formatDate(date: Date, format: string): string {
     let r = new RegExp('(' + k + ')').exec(format);
     // 若输入的长度不为 1，则前面补零
     if (r) {
-      format = format.replace(r[1], RegExp.$1.length == 1 ? opt[k] : opt[k].padStart(RegExp.$1.length, '0'));
+      format = format.replace(
+        r[1],
+        RegExp.$1.length == 1 ? opt[k] : opt[k].padStart(RegExp.$1.length, '0'),
+      );
     }
   }
   return format;
@@ -64,7 +77,7 @@ export function formatDate(date: Date, format: string): string {
 
 /**
  * 获取当前日期是第几周
- * 
+ *
  * @param dateTime - 当前传入的日期值
  * @returns 返回第几周数字值
  */
@@ -138,7 +151,7 @@ export function formatPast(param: string | Date, format: string = 'YYYY-mm-dd'):
 
 /**
  * 时间问候语
- * 
+ *
  * @param param - 当前时间，new Date() 格式
  * @description param 调用 `formatAxis(new Date())` 输出 `上午好`
  * @returns 返回拼接后的时间字符串
@@ -147,13 +160,21 @@ export function formatAxis(param: Date): string {
   let hour: number = new Date(param).getHours();
 
   switch (true) {
-    case hour < 6: return '凌晨好';
-    case hour < 9: return '早上好';
-    case hour < 12: return '上午好';
-    case hour < 14: return '中午好';
-    case hour < 17: return '下午好';
-    case hour < 19: return '傍晚好';
-    case hour < 22: return '晚上好';
-    default: return '夜里好';
+    case hour < 6:
+      return '凌晨好';
+    case hour < 9:
+      return '早上好';
+    case hour < 12:
+      return '上午好';
+    case hour < 14:
+      return '中午好';
+    case hour < 17:
+      return '下午好';
+    case hour < 19:
+      return '傍晚好';
+    case hour < 22:
+      return '晚上好';
+    default:
+      return '夜里好';
   }
 }

@@ -7,17 +7,17 @@ const root: string = process.cwd();
 
 /**
  * 路径查找
- * 
+ *
  * @param dir - 目录
  * @returns 绝对路径
  */
 function pathResolve(dir: string): string {
   return resolve(__dirname, '.', dir);
-};
+}
 
 /**
  * 处理环境变量
- * 
+ *
  * @param envConf - 环境变量
  * @returns 类型转换后的 vite 环境变量
  */
@@ -48,11 +48,11 @@ function warpperEnv(envConf: Record<string, string>): ViteEnv {
     ret[envName] = realName;
   }
   return ret;
-};
+}
 
 /** 设置别名 */
 const alias: Record<string, string> = {
-  '~': pathResolve('src'),
+  '@': pathResolve('src'),
 };
 const viteConfig = defineConfig((config: ConfigEnv): UserConfig => {
   const { command, mode } = config;
@@ -61,7 +61,7 @@ const viteConfig = defineConfig((config: ConfigEnv): UserConfig => {
   return {
     base: VITE_PUBLIC_PATH,
     resolve: {
-      alias
+      alias,
     },
     // 服务端渲染
     server: {
@@ -71,13 +71,9 @@ const viteConfig = defineConfig((config: ConfigEnv): UserConfig => {
       port: VITE_PORT,
       host: '0.0.0.0',
       // 本地跨域代理
-      proxy: {
-
-      },
+      proxy: {},
     },
-    plugins: [
-      uni(),
-    ],
+    plugins: [uni()],
     build: {
       sourcemap: false,
       // 消除打包大小超过 500kb 警告
@@ -91,13 +87,13 @@ const viteConfig = defineConfig((config: ConfigEnv): UserConfig => {
           chunkFileNames: 'static/js/[name]-[hash].js',
           entryFileNames: 'static/js/[name]-[hash].js',
           assetFileNames: 'static/[ext]/[name]-[hash].[ext]',
-        }
+        },
       },
     },
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import "~/style/uni.scss";',
+          additionalData: '@import "@/style/uni.scss";',
         },
       },
     },
