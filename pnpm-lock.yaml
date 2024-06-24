@@ -15,8 +15,8 @@ importers:
         specifier: 3.0.0-4010520240507001
         version: 3.0.0-4010520240507001(postcss@8.4.38)(rollup@3.29.4)(vite@4.5.3(@types/node@20.14.7)(sass@1.77.4)(terser@5.31.0))(vue@3.4.27(typescript@5.4.5))
       '@dcloudio/uni-components':
-        specifier: 3.0.0-4000720240327002
-        version: 3.0.0-4000720240327002(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))
+        specifier: 3.0.0-4010520240507001
+        version: 3.0.0-4010520240507001(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))
       '@dcloudio/uni-h5':
         specifier: 3.0.0-4000720240327002
         version: 3.0.0-4000720240327002(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))
@@ -746,14 +746,8 @@ packages:
     resolution: {integrity: sha512-TB8yf4zAVNY4FWUPt7MRw5p26xmK+QmScVc4m8caRlUG9BQRPG8/ZDgalC5/o6nXhPnm+vj3/jbGYxRCfCL/9A==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  '@dcloudio/uni-cloud@3.0.0-4000720240327002':
-    resolution: {integrity: sha512-OF0ykfF7D6fb1a18yjQgpOynnoQI/X2XvqsmXEBu4v5+V77RWR5V9cBq6+m7Haqfkd5anJl09tBMY3SFrLNMWw==}
-
   '@dcloudio/uni-cloud@3.0.0-4010520240507001':
     resolution: {integrity: sha512-STJQOhi6XNCob4msDrQvFrVmjPGIhDvxnHa2X7OLRqGrNhOkAe5Rcnsg2THA/CPAnqfT7xIYARvr9Jqb1z+8Mg==}
-
-  '@dcloudio/uni-components@3.0.0-4000720240327002':
-    resolution: {integrity: sha512-xDKU8lMZbc9Aa6PrqN+49mt5vHhzrpIEDWDlRekTUjOTq20pbR1Zi/P9r+B4TzhmeIu74Q5j0TPPn65iuTHbeQ==}
 
   '@dcloudio/uni-components@3.0.0-4010520240507001':
     resolution: {integrity: sha512-MTy3Fe0d/AAsy8TN8adAEFpDu/805l5MSV1FBckzhiF6QoCdl3ammAe3Z2uxrR6rFHMGnKfgfgjhYvyK8BAD7Q==}
@@ -1612,9 +1606,6 @@ packages:
 
   '@types/istanbul-reports@3.0.4':
     resolution: {integrity: sha512-pk2B1NWalF9toCRu6gjBzR69syFjP4Od8WRAX+0mmf9lAjCRicLOWc+ZrxZHx/0XRjotgkF9t6iaMJ+aXcOdZQ==}
-
-  '@types/node@20.14.2':
-    resolution: {integrity: sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==}
 
   '@types/node@20.14.7':
     resolution: {integrity: sha512-uTr2m2IbJJucF3KUxgnGOZvYbN0QgkGyWxG6973HCpMYFy2KfcgYuIwkJQMQkt1VbBMlvWRbpshFTLxnxCZjKQ==}
@@ -4731,22 +4722,6 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-cloud@3.0.0-4000720240327002(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))':
-    dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-4000720240327002(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))
-      '@dcloudio/uni-i18n': 3.0.0-4000720240327002
-      '@dcloudio/uni-shared': 3.0.0-4000720240327002
-      '@vue/shared': 3.3.11
-      fast-glob: 3.3.2
-    transitivePeerDependencies:
-      - '@nuxt/kit'
-      - '@vueuse/core'
-      - postcss
-      - rollup
-      - supports-color
-      - ts-node
-      - vue
-
   '@dcloudio/uni-cloud@3.0.0-4010520240507001(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))':
     dependencies:
       '@dcloudio/uni-cli-shared': 3.0.0-4010520240507001(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))
@@ -4754,20 +4729,6 @@ snapshots:
       '@dcloudio/uni-shared': 3.0.0-4010520240507001
       '@vue/shared': 3.4.21
       fast-glob: 3.3.2
-    transitivePeerDependencies:
-      - '@nuxt/kit'
-      - '@vueuse/core'
-      - postcss
-      - rollup
-      - supports-color
-      - ts-node
-      - vue
-
-  '@dcloudio/uni-components@3.0.0-4000720240327002(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))':
-    dependencies:
-      '@dcloudio/uni-cloud': 3.0.0-4000720240327002(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))
-      '@dcloudio/uni-h5': 3.0.0-4000720240327002(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))
-      '@dcloudio/uni-i18n': 3.0.0-4000720240327002
     transitivePeerDependencies:
       - '@nuxt/kit'
       - '@vueuse/core'
@@ -5558,7 +5519,7 @@ snapshots:
   '@jest/console@27.5.1':
     dependencies:
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       chalk: 4.1.2
       jest-message-util: 27.5.1
       jest-util: 27.5.1
@@ -5571,7 +5532,7 @@ snapshots:
       '@jest/test-result': 27.5.1
       '@jest/transform': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       emittery: 0.8.1
@@ -5605,14 +5566,14 @@ snapshots:
     dependencies:
       '@jest/fake-timers': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       jest-mock: 27.5.1
 
   '@jest/fake-timers@27.5.1':
     dependencies:
       '@jest/types': 27.5.1
       '@sinonjs/fake-timers': 8.1.0
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       jest-message-util: 27.5.1
       jest-mock: 27.5.1
       jest-util: 27.5.1
@@ -5630,7 +5591,7 @@ snapshots:
       '@jest/test-result': 27.5.1
       '@jest/transform': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       chalk: 4.1.2
       collect-v8-coverage: 1.0.2
       exit: 0.1.2
@@ -5699,7 +5660,7 @@ snapshots:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       '@types/yargs': 16.0.9
       chalk: 4.1.2
 
@@ -6056,7 +6017,7 @@ snapshots:
 
   '@types/graceful-fs@4.1.9':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
 
   '@types/istanbul-lib-coverage@2.0.6': {}
 
@@ -6067,10 +6028,6 @@ snapshots:
   '@types/istanbul-reports@3.0.4':
     dependencies:
       '@types/istanbul-lib-report': 3.0.3
-
-  '@types/node@20.14.2':
-    dependencies:
-      undici-types: 5.26.5
 
   '@types/node@20.14.7':
     dependencies:
@@ -7184,7 +7141,7 @@ snapshots:
       '@jest/environment': 27.5.1
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       chalk: 4.1.2
       co: 4.6.0
       dedent: 0.7.0
@@ -7280,7 +7237,7 @@ snapshots:
       '@jest/environment': 27.5.1
       '@jest/fake-timers': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       jest-mock: 27.5.1
       jest-util: 27.5.1
       jsdom: 16.7.0
@@ -7295,7 +7252,7 @@ snapshots:
       '@jest/environment': 27.5.1
       '@jest/fake-timers': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       jest-mock: 27.5.1
       jest-util: 27.5.1
 
@@ -7305,7 +7262,7 @@ snapshots:
     dependencies:
       '@jest/types': 27.5.1
       '@types/graceful-fs': 4.1.9
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       anymatch: 3.1.3
       fb-watchman: 2.0.2
       graceful-fs: 4.2.11
@@ -7324,7 +7281,7 @@ snapshots:
       '@jest/source-map': 27.5.1
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       chalk: 4.1.2
       co: 4.6.0
       expect: 27.5.1
@@ -7367,7 +7324,7 @@ snapshots:
   jest-mock@27.5.1:
     dependencies:
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
 
   jest-pnp-resolver@1.2.3(jest-resolve@27.5.1):
     optionalDependencies:
@@ -7403,7 +7360,7 @@ snapshots:
       '@jest/test-result': 27.5.1
       '@jest/transform': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       chalk: 4.1.2
       emittery: 0.8.1
       graceful-fs: 4.2.11
@@ -7454,7 +7411,7 @@ snapshots:
 
   jest-serializer@27.5.1:
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       graceful-fs: 4.2.11
 
   jest-snapshot@27.5.1:
@@ -7487,7 +7444,7 @@ snapshots:
   jest-util@27.5.1:
     dependencies:
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -7506,7 +7463,7 @@ snapshots:
     dependencies:
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       jest-util: 27.5.1
@@ -7514,7 +7471,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
