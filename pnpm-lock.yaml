@@ -94,8 +94,8 @@ importers:
         specifier: ^4.5.3
         version: 4.5.3(@types/node@20.14.7)(sass@1.77.4)(terser@5.31.0)
       vue-tsc:
-        specifier: ^2.0.21
-        version: 2.0.21(typescript@5.4.5)
+        specifier: ^2.0.22
+        version: 2.0.22(typescript@5.4.5)
 
 packages:
 
@@ -1613,9 +1613,6 @@ packages:
   '@types/istanbul-reports@3.0.4':
     resolution: {integrity: sha512-pk2B1NWalF9toCRu6gjBzR69syFjP4Od8WRAX+0mmf9lAjCRicLOWc+ZrxZHx/0XRjotgkF9t6iaMJ+aXcOdZQ==}
 
-  '@types/node@20.14.2':
-    resolution: {integrity: sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==}
-
   '@types/node@20.14.7':
     resolution: {integrity: sha512-uTr2m2IbJJucF3KUxgnGOZvYbN0QgkGyWxG6973HCpMYFy2KfcgYuIwkJQMQkt1VbBMlvWRbpshFTLxnxCZjKQ==}
 
@@ -1659,14 +1656,14 @@ packages:
       vite: ^5.0.0
       vue: ^3.2.25
 
-  '@volar/language-core@2.3.0':
-    resolution: {integrity: sha512-pvhL24WUh3VDnv7Yw5N1sjhPtdx7q9g+Wl3tggmnkMcyK8GcCNElF2zHiKznryn0DiUGk+eez/p2qQhz+puuHw==}
+  '@volar/language-core@2.3.4':
+    resolution: {integrity: sha512-wXBhY11qG6pCDAqDnbBRFIDSIwbqkWI7no+lj5+L7IlA7HRIjRP7YQLGzT0LF4lS6eHkMSsclXqy9DwYJasZTQ==}
 
-  '@volar/source-map@2.3.0':
-    resolution: {integrity: sha512-G/228aZjAOGhDjhlyZ++nDbKrS9uk+5DMaEstjvzglaAw7nqtDyhnQAsYzUg6BMP9BtwZ59RIw5HGePrutn00Q==}
+  '@volar/source-map@2.3.4':
+    resolution: {integrity: sha512-C+t63nwcblqLIVTYXaVi/+gC8NukDaDIQI72J3R7aXGvtgaVB16c+J8Iz7/VfOy7kjYv7lf5GhBny6ACw9fTGQ==}
 
-  '@volar/typescript@2.3.0':
-    resolution: {integrity: sha512-PtUwMM87WsKVeLJN33GSTUjBexlKfKgouWlOUIv7pjrOnTwhXHZNSmpc312xgXdTjQPpToK6KXSIcKu9sBQ5LQ==}
+  '@volar/typescript@2.3.4':
+    resolution: {integrity: sha512-acCvt7dZECyKcvO5geNybmrqOsu9u8n5XP1rfiYsOLYGPxvHRav9BVmEdRyZ3vvY6mNyQ1wLL5Hday4IShe17w==}
 
   '@vue/babel-helper-vue-transform-on@1.2.2':
     resolution: {integrity: sha512-nOttamHUR3YzdEqdM/XXDyCSdxMA9VizUKoroLX6yTyRtggzQMHXcmwh8a7ZErcJttIBIc9s68a1B8GZ+Dmvsw==}
@@ -1727,8 +1724,8 @@ packages:
   '@vue/devtools-api@6.6.2':
     resolution: {integrity: sha512-134clD8u7cBBXdmBbXI282gHGF7T/eAbD/G7mAK2llQF62IbI4ny28IVamZVMoJSvfImC2Xxnj732hXkJvUj6g==}
 
-  '@vue/language-core@2.0.21':
-    resolution: {integrity: sha512-vjs6KwnCK++kIXT+eI63BGpJHfHNVJcUCr3RnvJsccT3vbJnZV5IhHR2puEkoOkIbDdp0Gqi1wEnv3hEd3WsxQ==}
+  '@vue/language-core@2.0.22':
+    resolution: {integrity: sha512-dNTAAtEOuMiz7N1s5tKpypnVVCtawxVSF5BukD0ELcYSw+DSbrSlYYSw8GuwvurodCeYFSHsmslE+c2sYDNoiA==}
     peerDependencies:
       typescript: '*'
     peerDependenciesMeta:
@@ -3613,8 +3610,8 @@ packages:
   vue-template-compiler@2.7.16:
     resolution: {integrity: sha512-AYbUWAJHLGGQM7+cNTELw+KsOG9nl2CnSv467WobS5Cv9uk3wFcnr1Etsz2sEIHEZvw1U+o9mRlEO6QbZvUPGQ==}
 
-  vue-tsc@2.0.21:
-    resolution: {integrity: sha512-E6x1p1HaHES6Doy8pqtm7kQern79zRtIewkf9fiv7Y43Zo4AFDS5hKi+iHi2RwEhqRmuiwliB1LCEFEGwvxQnw==}
+  vue-tsc@2.0.22:
+    resolution: {integrity: sha512-lMBIwPBO0sxCcmvu45yt1b035AaQ8/XSXQDk8m75y4j0jSXY/y/XzfEtssQ9JMS47lDaR10O3/926oCs8OeGUw==}
     hasBin: true
     peerDependencies:
       typescript: '*'
@@ -5558,7 +5555,7 @@ snapshots:
   '@jest/console@27.5.1':
     dependencies:
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       chalk: 4.1.2
       jest-message-util: 27.5.1
       jest-util: 27.5.1
@@ -5571,7 +5568,7 @@ snapshots:
       '@jest/test-result': 27.5.1
       '@jest/transform': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       emittery: 0.8.1
@@ -5605,14 +5602,14 @@ snapshots:
     dependencies:
       '@jest/fake-timers': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       jest-mock: 27.5.1
 
   '@jest/fake-timers@27.5.1':
     dependencies:
       '@jest/types': 27.5.1
       '@sinonjs/fake-timers': 8.1.0
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       jest-message-util: 27.5.1
       jest-mock: 27.5.1
       jest-util: 27.5.1
@@ -5630,7 +5627,7 @@ snapshots:
       '@jest/test-result': 27.5.1
       '@jest/transform': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       chalk: 4.1.2
       collect-v8-coverage: 1.0.2
       exit: 0.1.2
@@ -5699,7 +5696,7 @@ snapshots:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       '@types/yargs': 16.0.9
       chalk: 4.1.2
 
@@ -6056,7 +6053,7 @@ snapshots:
 
   '@types/graceful-fs@4.1.9':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
 
   '@types/istanbul-lib-coverage@2.0.6': {}
 
@@ -6067,10 +6064,6 @@ snapshots:
   '@types/istanbul-reports@3.0.4':
     dependencies:
       '@types/istanbul-lib-report': 3.0.3
-
-  '@types/node@20.14.2':
-    dependencies:
-      undici-types: 5.26.5
 
   '@types/node@20.14.7':
     dependencies:
@@ -6120,17 +6113,15 @@ snapshots:
       vite: 4.5.3(@types/node@20.14.7)(sass@1.77.4)(terser@5.31.0)
       vue: 3.4.27(typescript@5.4.5)
 
-  '@volar/language-core@2.3.0':
+  '@volar/language-core@2.3.4':
     dependencies:
-      '@volar/source-map': 2.3.0
+      '@volar/source-map': 2.3.4
 
-  '@volar/source-map@2.3.0':
-    dependencies:
-      muggle-string: 0.4.1
+  '@volar/source-map@2.3.4': {}
 
-  '@volar/typescript@2.3.0':
+  '@volar/typescript@2.3.4':
     dependencies:
-      '@volar/language-core': 2.3.0
+      '@volar/language-core': 2.3.4
       path-browserify: 1.0.1
       vscode-uri: 3.0.8
 
@@ -6257,13 +6248,14 @@ snapshots:
 
   '@vue/devtools-api@6.6.2': {}
 
-  '@vue/language-core@2.0.21(typescript@5.4.5)':
+  '@vue/language-core@2.0.22(typescript@5.4.5)':
     dependencies:
-      '@volar/language-core': 2.3.0
+      '@volar/language-core': 2.3.4
       '@vue/compiler-dom': 3.4.27
       '@vue/shared': 3.4.29
       computeds: 0.0.1
       minimatch: 9.0.4
+      muggle-string: 0.4.1
       path-browserify: 1.0.1
       vue-template-compiler: 2.7.16
     optionalDependencies:
@@ -7184,7 +7176,7 @@ snapshots:
       '@jest/environment': 27.5.1
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       chalk: 4.1.2
       co: 4.6.0
       dedent: 0.7.0
@@ -7280,7 +7272,7 @@ snapshots:
       '@jest/environment': 27.5.1
       '@jest/fake-timers': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       jest-mock: 27.5.1
       jest-util: 27.5.1
       jsdom: 16.7.0
@@ -7295,7 +7287,7 @@ snapshots:
       '@jest/environment': 27.5.1
       '@jest/fake-timers': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       jest-mock: 27.5.1
       jest-util: 27.5.1
 
@@ -7305,7 +7297,7 @@ snapshots:
     dependencies:
       '@jest/types': 27.5.1
       '@types/graceful-fs': 4.1.9
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       anymatch: 3.1.3
       fb-watchman: 2.0.2
       graceful-fs: 4.2.11
@@ -7324,7 +7316,7 @@ snapshots:
       '@jest/source-map': 27.5.1
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       chalk: 4.1.2
       co: 4.6.0
       expect: 27.5.1
@@ -7367,7 +7359,7 @@ snapshots:
   jest-mock@27.5.1:
     dependencies:
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
 
   jest-pnp-resolver@1.2.3(jest-resolve@27.5.1):
     optionalDependencies:
@@ -7403,7 +7395,7 @@ snapshots:
       '@jest/test-result': 27.5.1
       '@jest/transform': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       chalk: 4.1.2
       emittery: 0.8.1
       graceful-fs: 4.2.11
@@ -7454,7 +7446,7 @@ snapshots:
 
   jest-serializer@27.5.1:
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       graceful-fs: 4.2.11
 
   jest-snapshot@27.5.1:
@@ -7487,7 +7479,7 @@ snapshots:
   jest-util@27.5.1:
     dependencies:
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -7506,7 +7498,7 @@ snapshots:
     dependencies:
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       jest-util: 27.5.1
@@ -7514,7 +7506,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 20.14.7
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -8366,10 +8358,10 @@ snapshots:
       de-indent: 1.0.2
       he: 1.2.0
 
-  vue-tsc@2.0.21(typescript@5.4.5):
+  vue-tsc@2.0.22(typescript@5.4.5):
     dependencies:
-      '@volar/typescript': 2.3.0
-      '@vue/language-core': 2.0.21(typescript@5.4.5)
+      '@volar/typescript': 2.3.4
+      '@vue/language-core': 2.0.22(typescript@5.4.5)
       semver: 7.6.2
       typescript: 5.4.5
 
