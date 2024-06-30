@@ -36,8 +36,8 @@ importers:
         specifier: 3.0.0-4010520240507001
         version: 3.0.0-4010520240507001(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))
       '@dcloudio/uni-mp-qq':
-        specifier: 3.0.0-4000720240327002
-        version: 3.0.0-4000720240327002(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))
+        specifier: 3.0.0-4010520240507001
+        version: 3.0.0-4010520240507001(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))
       '@dcloudio/uni-mp-toutiao':
         specifier: 3.0.0-4000720240327002
         version: 3.0.0-4000720240327002(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))
@@ -795,8 +795,8 @@ packages:
   '@dcloudio/uni-mp-lark@3.0.0-4010520240507001':
     resolution: {integrity: sha512-1z+lov0uvFZf+dfiA5VdPiQkqAEDpeXLeCw1vm0tCBy1tAFKkxZq5nQV2U6moPtE9WeCwf0TyohqRynCAaHqQg==}
 
-  '@dcloudio/uni-mp-qq@3.0.0-4000720240327002':
-    resolution: {integrity: sha512-N0nV7k0W5RLJyNUG1vxADsl/XexUb9L1hWaz/T8yVZKI6hxx4It9U2Z2keYXxnxpNV6t2ODi1uYpB1wjCbGsZw==}
+  '@dcloudio/uni-mp-qq@3.0.0-4010520240507001':
+    resolution: {integrity: sha512-9VXNFbihJfhde6imGls8fxB6f+xjmcTGxcOYiShQfnRRSlgR3Mawa1eqV48Jw/2PAZYTJXcr0g3A8EsjOzNcHA==}
 
   '@dcloudio/uni-mp-toutiao@3.0.0-4000720240327002':
     resolution: {integrity: sha512-+Q83cUoB8rr0ZyojAYydCCkN3ao8+ZWaGYj6WyDlP9oM3Q2o9Aajp161BljZ7iD+7MChUaqRJLgzq/TAbZKpfg==}
@@ -5008,13 +5008,13 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-mp-qq@3.0.0-4000720240327002(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))':
+  '@dcloudio/uni-mp-qq@3.0.0-4010520240507001(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-4000720240327002(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))
-      '@dcloudio/uni-mp-vite': 3.0.0-4000720240327002(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))
-      '@dcloudio/uni-mp-vue': 3.0.0-4000720240327002
-      '@dcloudio/uni-shared': 3.0.0-4000720240327002
-      '@vue/shared': 3.3.11
+      '@dcloudio/uni-cli-shared': 3.0.0-4010520240507001(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))
+      '@dcloudio/uni-mp-vite': 3.0.0-4010520240507001(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.27(typescript@5.4.5))
+      '@dcloudio/uni-mp-vue': 3.0.0-4010520240507001
+      '@dcloudio/uni-shared': 3.0.0-4010520240507001
+      '@vue/shared': 3.4.21
       fs-extra: 10.1.0
     transitivePeerDependencies:
       - '@nuxt/kit'
