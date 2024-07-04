@@ -71,7 +71,7 @@
     "@types/node": "^20.14.9",
     "@vue/runtime-core": "^3.4.31",
     "@vue/tsconfig": "^0.5.1",
-    "sass": "^1.77.4",
+    "sass": "^1.77.6",
     "typescript": "^5.4.5",
     "vite": "^4.5.3",
     "vue-tsc": "^2.0.24"
