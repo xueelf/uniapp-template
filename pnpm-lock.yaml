@@ -64,8 +64,8 @@ importers:
         specifier: ^3.4.11
         version: 3.4.11
       '@dcloudio/uni-automator':
-        specifier: 3.0.0-4010520240507001
-        version: 3.0.0-4010520240507001(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.31(typescript@5.5.3))
+        specifier: 3.0.0-4020420240722002
+        version: 3.0.0-4020420240722002(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.31(typescript@5.5.3))
       '@dcloudio/uni-cli-shared':
         specifier: 3.0.0-4010520240507001
         version: 3.0.0-4010520240507001(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.31(typescript@5.5.3))
@@ -737,8 +737,8 @@ packages:
     peerDependencies:
       '@dcloudio/types': ^3.4.8
 
-  '@dcloudio/uni-automator@3.0.0-4010520240507001':
-    resolution: {integrity: sha512-I/Ue71jEFcM3PfU80y1KUOL5398AQ5wJcqHqg9RSc3mTavpFLCbXSx7k+Yg7ZvUlhWR+YUUh24VXt5R985VDpw==}
+  '@dcloudio/uni-automator@3.0.0-4020420240722002':
+    resolution: {integrity: sha512-fgkotGZj/ycS4fElPGe89wXnJeUBaI3VCPyjS1C2qWY77EYfjeyrZDw6l0eHzA9YDOvZmYPhzACMgjwbfsEoLQ==}
     peerDependencies:
       jest: 27.0.4
       jest-environment-node: 27.5.1
@@ -4641,9 +4641,9 @@ snapshots:
       - ts-node
       - vue
 
-  '@dcloudio/uni-automator@3.0.0-4010520240507001(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.31(typescript@5.5.3))':
+  '@dcloudio/uni-automator@3.0.0-4020420240722002(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.31(typescript@5.5.3))':
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-4010520240507001(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.31(typescript@5.5.3))
+      '@dcloudio/uni-cli-shared': 3.0.0-4020420240722002(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.31(typescript@5.5.3))
       address: 1.2.2
       cross-env: 7.0.3
       debug: 4.3.5
