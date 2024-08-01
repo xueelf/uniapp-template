@@ -51,8 +51,8 @@ importers:
         specifier: 3.0.0-4000720240327002
         version: 3.0.0-4000720240327002(postcss@8.4.38)(rollup@3.29.4)(vue@3.4.31(typescript@5.5.3))
       pinia:
-        specifier: ^2.1.7
-        version: 2.1.7(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3))
+        specifier: ^2.2.0
+        version: 2.2.0(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3))
       vue:
         specifier: ^3.4.31
         version: 3.4.31(typescript@5.5.3)
@@ -1780,6 +1780,9 @@ packages:
   '@vue/devtools-api@6.6.2':
     resolution: {integrity: sha512-134clD8u7cBBXdmBbXI282gHGF7T/eAbD/G7mAK2llQF62IbI4ny28IVamZVMoJSvfImC2Xxnj732hXkJvUj6g==}
 
+  '@vue/devtools-api@6.6.3':
+    resolution: {integrity: sha512-0MiMsFma/HqA6g3KLKn+AGpL1kgKhFWszC9U29NfpWK5LE7bjeXxySWJrOJ77hBz+TBrBQ7o4QJqbPbqbs8rJw==}
+
   '@vue/language-core@2.0.29':
     resolution: {integrity: sha512-o2qz9JPjhdoVj8D2+9bDXbaI4q2uZTHQA/dbyZT4Bj1FR9viZxDJnLcKVHfxdn6wsOzRgpqIzJEEmSSvgMvDTQ==}
     peerDependencies:
@@ -3091,8 +3094,8 @@ packages:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
 
-  pinia@2.1.7:
-    resolution: {integrity: sha512-+C2AHFtcFqjPih0zpYuvof37SFxMQ7OEG2zV9jRI12i9BOy3YQVAHwdKtyyc8pDcDyIc33WCIsZaCFWU7WWxGQ==}
+  pinia@2.2.0:
+    resolution: {integrity: sha512-iPrIh26GMqfpUlMOGyxuDowGmYousTecbTHFwT0xZ1zJvh23oQ+Cj99ZoPQA1TnUPhU6AuRPv6/drkTCJ0VHQA==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
@@ -6590,6 +6593,8 @@ snapshots:
 
   '@vue/devtools-api@6.6.2': {}
 
+  '@vue/devtools-api@6.6.3': {}
+
   '@vue/language-core@2.0.29(typescript@5.5.3)':
     dependencies:
       '@volar/language-core': 2.4.0-alpha.18
@@ -8160,9 +8165,9 @@ snapshots:
 
   pify@2.3.0: {}
 
-  pinia@2.1.7(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3)):
+  pinia@2.2.0(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3)):
     dependencies:
-      '@vue/devtools-api': 6.6.2
+      '@vue/devtools-api': 6.6.3
       vue: 3.4.31(typescript@5.5.3)
       vue-demi: 0.14.8(vue@3.4.31(typescript@5.5.3))
     optionalDependencies:
