@@ -60,7 +60,7 @@
     "@dcloudio/uni-quickapp-webview": "3.0.0-4000720240327002",
     "pinia": "^2.2.2",
     "vue": "^3.4.38",
-    "vue-i18n": "^9.14.0"
+    "vue-i18n": "^10.0.1"
   },
   "devDependencies": {
     "@dcloudio/types": "^3.4.12",
