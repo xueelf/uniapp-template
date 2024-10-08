@@ -39,8 +39,8 @@ importers:
         specifier: 3.0.0-4020920240930001
         version: 3.0.0-4020920240930001(postcss@8.4.47)(rollup@3.29.4)(vue@3.5.7(typescript@5.6.2))
       '@dcloudio/uni-mp-toutiao':
-        specifier: 3.0.0-4020420240722002
-        version: 3.0.0-4020420240722002(postcss@8.4.47)(rollup@3.29.4)(vue@3.5.7(typescript@5.6.2))
+        specifier: 3.0.0-4020920240930001
+        version: 3.0.0-4020920240930001(postcss@8.4.47)(rollup@3.29.4)(vue@3.5.7(typescript@5.6.2))
       '@dcloudio/uni-mp-weixin':
         specifier: 3.0.0-4020420240722002
         version: 3.0.0-4020420240722002(postcss@8.4.47)(rollup@3.29.4)(vue@3.5.7(typescript@5.6.2))
@@ -827,6 +827,9 @@ packages:
 
   '@dcloudio/uni-mp-toutiao@3.0.0-4020420240722002':
     resolution: {integrity: sha512-mMyWaAvaMNn4fW5JNveK2gfa6rh7qzS1ffSPSx/NkzJzFYsKrLPuyfIU60LgN6a5YM3iNGoI3KYpRvgLjws4sg==}
+
+  '@dcloudio/uni-mp-toutiao@3.0.0-4020920240930001':
+    resolution: {integrity: sha512-eo0a+cwY9mgs/DxMplKpqTyIJmJUJpPr/hT2DPsqnPA8OXAbIKbhJBZbwC2z/EJDduOhzNpCkliHhv4Ahks2vQ==}
 
   '@dcloudio/uni-mp-vite@3.0.0-4000720240327002':
     resolution: {integrity: sha512-9gpVWP0crINKZTjEFuReCeK/0FmeKMoUbTrgkF2hnHHMqGTa7J1N6DDztO96b3mqZ0AUWqerxBFETXjKcSyybQ==}
@@ -5211,6 +5214,24 @@ snapshots:
       - ts-node
       - vue
 
+  '@dcloudio/uni-mp-toutiao@3.0.0-4020920240930001(postcss@8.4.47)(rollup@3.29.4)(vue@3.5.7(typescript@5.6.2))':
+    dependencies:
+      '@dcloudio/uni-cli-shared': 3.0.0-4020920240930001(postcss@8.4.47)(rollup@3.29.4)(vue@3.5.7(typescript@5.6.2))
+      '@dcloudio/uni-mp-compiler': 3.0.0-4020920240930001(postcss@8.4.47)(rollup@3.29.4)(vue@3.5.7(typescript@5.6.2))
+      '@dcloudio/uni-mp-vite': 3.0.0-4020920240930001(postcss@8.4.47)(rollup@3.29.4)(vue@3.5.7(typescript@5.6.2))
+      '@dcloudio/uni-mp-vue': 3.0.0-4020920240930001
+      '@dcloudio/uni-shared': 3.0.0-4020920240930001
+      '@vue/compiler-core': 3.4.21
+      '@vue/shared': 3.4.21
+    transitivePeerDependencies:
+      - '@nuxt/kit'
+      - '@vueuse/core'
+      - postcss
+      - rollup
+      - supports-color
+      - ts-node
+      - vue
+
   '@dcloudio/uni-mp-vite@3.0.0-4000720240327002(postcss@8.4.47)(rollup@3.29.4)(vue@3.5.7(typescript@5.6.2))':
     dependencies:
       '@dcloudio/uni-cli-shared': 3.0.0-4000720240327002(postcss@8.4.47)(rollup@3.29.4)(vue@3.5.7(typescript@5.6.2))
@@ -6300,7 +6321,7 @@ snapshots:
 
   '@vue/compiler-core@3.4.21':
     dependencies:
-      '@babel/parser': 7.24.7
+      '@babel/parser': 7.25.6
       '@vue/shared': 3.4.21
       entities: 4.5.0
       estree-walker: 2.0.2
