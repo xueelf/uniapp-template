@@ -6,25 +6,36 @@ import { ConfigEnv, defineConfig, loadEnv, UserConfig } from 'vite';
 const root: string = process.cwd();
 
 /**
- * 路径查找
+ * 路径查找。
  *
- * @param dir - 目录
- * @returns 绝对路径
+ * @param dir - 目录。
+ * @returns 绝对路径。
  */
 function pathResolve(dir: string): string {
   return resolve(__dirname, '.', dir);
 }
 
+interface Env {
+  /** APP 标题 */
+  VITE_APP_TITLE: string;
+  /** 服务端口 */
+  VITE_PORT: number;
+  /** 日志等级 */
+  VITE_LOG_LEVEL: string;
+  /** 接口地址 */
+  VITE_PUBLIC_PATH: string;
+}
+
 /**
- * 处理环境变量
+ * 处理环境变量。
  *
- * @param envConf - 环境变量
- * @returns 类型转换后的 vite 环境变量
+ * @param envConf - 环境变量。
+ * @returns 类型转换后的 vite 环境变量。
  */
-function warpperEnv(envConf: Record<string, string>): ViteEnv {
+function wrapperEnv(envConf: Record<string, string>): Env {
   // 默认值
-  const ret: ViteEnv = {
-    VITE_OPEN: false,
+  const ret: Env = {
+    VITE_APP_TITLE: 'Untitled',
     VITE_PORT: 2333,
     VITE_LOG_LEVEL: 'INFO',
     VITE_PUBLIC_PATH: '',
@@ -55,8 +66,8 @@ const alias: Record<string, string> = {
   '@': pathResolve('src'),
 };
 const viteConfig = defineConfig((config: ConfigEnv): UserConfig => {
-  const { command, mode } = config;
-  const { VITE_PUBLIC_PATH, VITE_PORT } = warpperEnv(loadEnv(mode, root));
+  const { mode } = config;
+  const { VITE_PUBLIC_PATH, VITE_PORT } = wrapperEnv(loadEnv(mode, root));
 
   return {
     base: VITE_PUBLIC_PATH,
@@ -65,8 +76,6 @@ const viteConfig = defineConfig((config: ConfigEnv): UserConfig => {
     },
     // 服务端渲染
     server: {
-      // 是否开启 https
-      https: false,
       // 端口号
       port: VITE_PORT,
       host: '0.0.0.0',
@@ -93,7 +102,7 @@ const viteConfig = defineConfig((config: ConfigEnv): UserConfig => {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import "@/style/uni.scss";',
+          additionalData: `@use '@/styles/uni.scss' as *;`,
         },
       },
     },

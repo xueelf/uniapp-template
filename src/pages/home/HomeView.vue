@@ -1,3 +1,8 @@
+<script setup lang="ts">
+  import { ref } from 'vue';
+  const message = ref('Ciallo～(∠·ω< )⌒★');
+</script>
+
 <template>
   <view class="container">
     <image class="logo" mode="aspectFit" src="/static/logo.png" />
@@ -6,11 +11,6 @@
     </view>
   </view>
 </template>
-
-<script setup lang="ts">
-  import { ref } from 'vue';
-  const message = ref('Ciallo～(∠·ω< )⌒★');
-</script>
 
 <style scoped lang="scss">
   .container {

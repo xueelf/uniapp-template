@@ -1,5 +1,5 @@
 import { storeToRefs } from 'pinia';
-import { useAuthStore } from '@/store/auth';
+import { useAuthStore } from '@/stores/auth';
 
 const authStore = useAuthStore();
 const { VITE_API_URL } = import.meta.env;

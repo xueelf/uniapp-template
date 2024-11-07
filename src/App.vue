@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { onLaunch, onShow, onHide } from '@dcloudio/uni-app';
-  import { logger } from '@/utils/logger';
+  import { logger } from '@/util/logger';
 
   onLaunch(() => {
     logger.info('App Launch');
@@ -13,6 +13,4 @@
   });
 </script>
 
-<style scoped lang="scss">
-  @import '@/style/index.scss';
-</style>
+<style lang="scss"></style>

@@ -1,5 +1,5 @@
 import { useUserApi } from '@/api/user';
-import { useAuthStore } from '@/store/auth';
+import { useAuthStore } from '@/stores/auth';
 
 type ShowToastOptions = Omit<UniApp.ShowToastOptions, 'title'>;
 type ShowModalOptions = Omit<UniApp.ShowModalOptions, 'content'>;
