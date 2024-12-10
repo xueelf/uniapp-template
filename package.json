@@ -60,7 +60,7 @@
     "@dcloudio/uni-mp-toutiao": "3.0.0-4020920240930001",
     "@dcloudio/uni-mp-weixin": "3.0.0-4020920240930001",
     "@dcloudio/uni-mp-xhs": "3.0.0-4020920240930001",
-    "@dcloudio/uni-quickapp-webview": "3.0.0-4020920240930001",
+    "@dcloudio/uni-quickapp-webview": "3.0.0-4030620241128001",
     "pinia": "^2.3.0",
     "vue": "^3.5.13",
     "vue-i18n": "^10.0.5"
