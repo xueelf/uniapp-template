@@ -46,7 +46,7 @@
   "author": "Yuki <admin@yuki.sh>",
   "license": "MIT",
   "dependencies": {
-    "@dcloudio/uni-app": "3.0.0-4020920240930001",
+    "@dcloudio/uni-app": "3.0.0-4030620241128001",
     "@dcloudio/uni-app-harmony": "3.0.0-4020920240930001",
     "@dcloudio/uni-app-plus": "3.0.0-4030620241128001",
     "@dcloudio/uni-components": "3.0.0-4020920240930001",
